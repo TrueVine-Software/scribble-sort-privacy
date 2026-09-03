@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; Scribble Sort</title>
+<meta name="description" content="Privacy policy for the Android game Scribble Sort. Rewarded ads only, player-initiated. Google Mobile Ads SDK for ad serving. Game progress stays on your device.">
+<meta name="robots" content="index, follow">
+<style>
+  :root {
+    --paper: #f6eedd;
+    --panel: #fbf6e9;
+    --ink: #3a322a;
+    --ink-soft: #6b6156;
+    --rule: #a9c1de;
+    --margin-rule: #e4877a;
+    --accent: #37ab5e;
+    --warn-bg: #fdf3d6;
+    --warn-border: #f6af22;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1d1b18;
+      --panel: #262320;
+      --ink: #ece4d5;
+      --ink-soft: #b0a696;
+      --rule: #3b4550;
+      --margin-rule: #6d4b46;
+      --accent: #63c98a;
+      --warn-bg: #342d18;
+      --warn-border: #a3781a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .sheet {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 1.25rem; margin-bottom: 2rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  h2 {
+    font-size: 1.25rem;
+    margin: 2.5rem 0 .75rem;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 22%, transparent);
+  }
+  h3 { font-size: 1.05rem; margin: 1.75rem 0 .5rem; }
+  p, li { margin: 0 0 .85rem; }
+  ul { padding-left: 1.35rem; }
+  .updated { color: var(--ink-soft); font-size: .95rem; margin: 0; }
+  .lede {
+    background: var(--panel);
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.15rem;
+    border-radius: 4px;
+    margin: 1.5rem 0 0;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+  strong { font-weight: 650; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .875em;
+    background: color-mix(in srgb, var(--ink) 8%, transparent);
+    padding: .1em .35em;
+    border-radius: 3px;
+    word-break: break-word;
+  }
+  .table-scroll { overflow-x: auto; margin: 1rem 0 1.25rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: .94rem; }
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: .6rem .7rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+  }
+  th { border-bottom-width: 2px; font-weight: 650; }
+  tbody tr:nth-child(odd) { background: color-mix(in srgb, var(--panel) 65%, transparent); }
+  .note {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    border-radius: 5px;
+    padding: .9rem 1.1rem;
+    margin: 1.25rem 0;
+    font-size: .95rem;
+  }
+  .note p:last-child { margin-bottom: 0; }
+  .contact-box {
+    background: var(--panel);
+    border: 2px dashed var(--margin-rule);
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin: 1.25rem 0;
+  }
+  .contact-box p:last-child { margin-bottom: 0; }
+  .email { font-weight: 700; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid color-mix(in srgb, var(--ink) 20%, transparent);
+    color: var(--ink-soft);
+    font-size: .9rem;
+  }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main class="sheet">
+
+<header>
+  <h1>Privacy Policy for Scribble Sort</h1>
+  <p class="updated">Last updated: 2 September 2026</p>
+</header>
+
+<p>Scribble Sort is a single-player puzzle game for Android, published under the
+package name <code>com.truevinesoftwaresolutions.scribblesort</code>.</p>
+
+<p>This policy describes exactly what the app does with information. Scribble Sort
+integrates the Google Mobile Ads SDK to show rewarded ads, and it only ever
+shows one when you ask for help: an extra hint once your three free ones are
+spent, or the one extra tube a level allows. The policy below covers what data
+is involved in that ad-serving flow, when the app goes online, and what stays
+local to your device.</p>
+
+<h2>The short version</h2>
+<ul>
+  <li>No accounts, no sign-in, no profile.</li>
+  <li>Ads only when you ask. An extra hint beyond the three free ones per level, or
+      the one extra tube a level allows &mdash; both earned by watching a rewarded ad.
+      The app shows ads only when you request them, never between levels, never as
+      banners. If no ad can be shown, the extra tube is granted free anyway; an
+      extra hint is simply not offered.</li>
+  <li>The game's own code never contacts the network. The Google Mobile Ads SDK
+      does: when the app starts, to check your consent status and to preload one
+      rewarded ad, and again around each ad you watch. Nothing else goes online.</li>
+  <li>The Google Mobile Ads SDK collects device and advertising identifiers &mdash;
+      including your IP address, from which Google may estimate an approximate
+      location &mdash; and data about your ad interactions, for advertising purposes.
+      The app itself has no location permission. Your consent is
+      requested via the User Messaging Platform (UMP) where required. You can
+      change your privacy choices at any time in the app's Settings.</li>
+  <li>No analytics SDK, no crash reporting, no telemetry from the game itself.</li>
+  <li>Game progress, puzzle state, and sound/vibration switches stay on your device
+      in the app's private storage and are never sent to our servers.</li>
+  <li>Your game progress is included in your Android backup by your choice, so a
+      new phone restores it. That backup is yours; the app cannot read it.</li>
+  <li>You can erase your progress from inside the game, and uninstalling removes
+      everything the app has stored on the device.</li>
+</ul>
+
+<h2>What the app stores on your device</h2>
+
+<p>Scribble Sort saves a small amount of data using Android's standard
+<code>SharedPreferences</code> mechanism. This is written to the app's own
+private storage area, which other apps cannot read. It is never uploaded by
+the app.</p>
+
+<p>The complete list of what is stored is:</p>
+
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>What</th><th>Stored as</th><th>Why</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Your best star rating (1&ndash;3) for each level you have finished</td>
+      <td><code>progress.stars.level.&lt;level number&gt;</code></td>
+      <td>So the level map can show your stars and your best result is not lost</td>
+    </tr>
+    <tr>
+      <td>Which of the ten keepsake pictures you have fully unlocked</td>
+      <td><code>progress.unlockedPictures</code></td>
+      <td>So the gallery knows which pictures to show finished</td>
+    </tr>
+    <tr>
+      <td>Whether you have already been shown the one-time tutorial</td>
+      <td><code>tutorial.done</code></td>
+      <td>So the game only teaches you the rules once</td>
+    </tr>
+    <tr>
+      <td>A format-version number for the save file itself</td>
+      <td><code>progress.schemaVersion</code></td>
+      <td>So a future update can read a save written by this one</td>
+    </tr>
+    <tr>
+      <td>The puzzle you are part-way through: the level number, the colours
+          currently in each tube, the moves you have made in it, how many
+          hints you have left, how deep the tubes are, whether you took the
+          extra tube, and a format-version number</td>
+      <td><code>session.inProgress</code></td>
+      <td>So closing the game mid-level and coming back does not lose the board</td>
+    </tr>
+    <tr>
+      <td>Whether sound effects are on</td>
+      <td><code>settings.sound</code></td>
+      <td>So the game remembers you muted it</td>
+    </tr>
+    <tr>
+      <td>Whether vibration is on</td>
+      <td><code>settings.haptics</code></td>
+      <td>So the game remembers you turned it off</td>
+    </tr>
+    <tr>
+      <td>How many times the game has ever asked you to rate it (0, 1 or 2)</td>
+      <td><code>review.requestCount</code></td>
+      <td>So it can keep its promise to ask at most twice in the lifetime of
+          the install</td>
+    </tr>
+    <tr>
+      <td>When it last asked, as a plain timestamp</td>
+      <td><code>review.lastRequestTime</code></td>
+      <td>So a second ask cannot arrive within 30 days of the first</td>
+    </tr>
+    <tr>
+      <td>A rating prompt earned by finishing a chapter but not yet shown</td>
+      <td><code>review.pendingChapters</code></td>
+      <td>So a prompt earned on the win card is delivered on the quiet level
+          map rather than over your finished picture, even if you close the
+          game in between</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>That is the entire list &mdash; ten kinds of value, and there is nothing else.</p>
+
+<p>The lifetimes differ, and they do not split where the table does. The five
+progress rows &mdash; your stars, your unlocked pictures, the tutorial flag, the
+board you are part-way through and <code>review.pendingChapters</code> &mdash;
+last until you erase your progress or uninstall the app;
+<code>review.pendingChapters</code> goes with the rest because the chapter that
+earned it is gone too. The other five last until you uninstall: your sound
+switch, your vibration switch, the save-format version number,
+<code>review.requestCount</code> and <code>review.lastRequestTime</code>. Those
+last two are not a record of anything you did, they are the app's memory of a
+promise about how often it will ever interrupt you, and erasing progress does
+not reset them. See &ldquo;How to delete your data&rdquo; below.</p>
+
+<p>The app does <strong>not</strong> store, and never asks for:</p>
+<ul>
+  <li>your name, email address, phone number or any other contact detail</li>
+  <li>your location &mdash; the app holds no location permission and never asks Android
+      where you are (Google's ad SDK may still estimate an approximate area from
+      your IP address; see &ldquo;Google Mobile Ads SDK&rdquo; below)</li>
+  <li>your contacts, photos, files, camera or microphone</li>
+  <li>any advertising identifier, device identifier or persistent user ID</li>
+  <li>any payment information (the game has no purchases of any kind)</li>
+</ul>
+
+<h2>What the app sends over the internet</h2>
+
+<p>The game's own code never contacts the network. Every level, every drawing and
+every sound ships inside the app, and your progress is written only to your own
+device. The app requests the <code>INTERNET</code> permission for one reason: the bundled
+Google Mobile Ads SDK needs it.</p>
+
+<p>Everything this policy says about ads describes the app as it ships with ads
+configured. The other case is worth stating plainly, because it is true of any
+build that lacks working AdMob identifiers and of any device where the SDK fails
+to start: <strong>if ads are not configured, or the ads SDK cannot start for any
+other reason, the app makes no ad-related network requests at all</strong>
+&mdash; no consent check, no ad request, nothing. In that state the SDK is never
+started, so it never opens a connection and no consent form is ever shown, and
+the game behaves exactly as it does with no connection at all.</p>
+
+<p>That SDK goes online at three moments, and no others:</p>
+
+<ul>
+  <li><strong>When the app starts.</strong> On every cold start it contacts Google to check your
+      consent status through the User Messaging Platform and, if ads can be
+      requested, to preload one rewarded ad &mdash; fetched in advance of your asking, so
+      that it is already waiting the moment you want a hint or a tube. This happens before you have tapped
+      anything, and it happens whether or not you go on to watch an ad.</li>
+  <li><strong>When you watch a rewarded ad</strong>, to serve that ad and to report that you
+      watched it.</li>
+  <li><strong>Straight after an ad has been shown</strong>, to fetch the next one ready for the
+      next time you ask.</li>
+</ul>
+
+<p>At those moments the SDK sends:</p>
+
+<ul>
+  <li>Your device's advertising identifier and other device identifiers, including
+      your IP address.</li>
+  <li>Information about the ad interaction (that you watched it, how long you
+      watched, whether you completed it).</li>
+  <li>Diagnostic information about your app and the SDK's performance.</li>
+</ul>
+
+<p>This data is encrypted in transit using TLS (Transport Layer Security).</p>
+
+<p>Nothing else goes online. Your game progress, puzzle state and settings stay on
+your device: they are never sent to us, and never sent to Google. If the device
+is offline, the SDK's requests simply fail, no ad is available, and the game
+carries on &mdash; see &ldquo;Permissions&rdquo; below for what that means for hints and tubes.</p>
+
+<p>(The <code>INTERNET</code> permission does appear in the app's <em>debug</em>
+and <em>profile</em> build configurations. Those are development-only builds
+used to attach a debugger on a developer's machine; they are not the builds
+distributed on Google Play.)</p>
+
+<h3>The Google Play rating prompt</h3>
+
+<p>One other thing leaves the app, and it is not a network request the app
+makes. After you finish the first chapter, and again after the third, Scribble
+Sort may ask the <strong>Google Play Store app already on your device</strong>
+to show Google's own in-app rating sheet &mdash; at most twice in the lifetime
+of the install, at least 30 days apart, and only once you are back on the calm
+level map. The app hands that request to the Play Store over Android's own
+inter-process messaging; Play decides whether to show anything at all, and often
+shows nothing. Whatever you type or tap in that sheet goes to Google Play, never
+to the developer: this app cannot read your rating, cannot tell whether the
+sheet appeared, and records nothing about it beyond the three local counters
+listed in the table above. The &ldquo;Rate Scribble Sort&rdquo; row on the game's
+About card is the same thing by hand &mdash; it opens this app's listing in the
+Play Store. Google's privacy policy governs what happens once the request or the
+listing reaches Play:
+<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+
+<h2>Third-party libraries</h2>
+
+<p>Scribble Sort is built with Flutter and depends directly on five open-source
+libraries:</p>
+<ul>
+  <li><strong>google_mobile_ads</strong> &mdash; the Google Mobile Ads SDK for Flutter, which fetches
+      and displays rewarded ads. It is one of the two libraries here that reach
+      outside the app, and the only one that opens a network connection itself.
+      See the section below on Google Mobile Ads SDK data collection.</li>
+  <li><strong>in_app_review</strong> &mdash; asks the Google Play Store app to
+      show its own rating sheet, and opens this app's store listing from the
+      &ldquo;Rate Scribble Sort&rdquo; row on the About card. This is the second
+      library that reaches outside the app, though not over the network
+      directly: it hands the request to the Play Store app installed on your
+      device, and Play talks to Google. See &ldquo;The Google Play rating
+      prompt&rdquo; above.</li>
+  <li><strong>shared_preferences</strong> &mdash; reads and writes the on-device
+      settings listed above.</li>
+  <li><strong>flutter_soloud</strong> &mdash; plays the game's short sound
+      effects, which ship inside the app.</li>
+  <li><strong>collection</strong> &mdash; general-purpose Dart list and map
+      helpers.</li>
+</ul>
+
+<p>Those five pull in a handful of smaller packages of their own. One is
+<strong>path_provider</strong>, which finds the app's own private temporary
+folder on the device: the game never calls it itself, flutter_soloud uses it to
+copy each bundled sound file out of the app package before playing it, and it
+ships in the released app for every processor architecture. Another is
+Dart's <code>http</code> package, which flutter_soloud offers for the <em>other</em>
+way of loading a sound &mdash; from a web address. Scribble Sort never uses
+that path: every sound it plays is a file inside the app.</p>
+
+<h2>Google Mobile Ads SDK</h2>
+
+<p>At those moments &mdash; app start, watching a rewarded ad, and fetching the next
+one &mdash; the Google Mobile Ads SDK collects and sends the following data:</p>
+
+<ul>
+  <li><strong>Android Advertising ID</strong> &mdash; A unique, resettable identifier assigned by
+      Android to your device. You can reset it or opt out of personalised ads at
+      any time in your Android settings: Settings &rarr; Google &rarr; Manage your Google
+      Account &rarr; Data &amp; Privacy &rarr; Ad personalization &rarr; Manage your Google Ads
+      settings.</li>
+  <li><strong>Device and account identifiers</strong> &mdash; IP address, app set ID, and signed-in
+      account information, used for ad targeting and frequency capping.</li>
+  <li><strong>App activity</strong> &mdash; Information about the ad (whether it was shown, how long
+      you watched, whether you completed it).</li>
+  <li><strong>App diagnostics</strong> &mdash; App launch time, hang rate, energy usage, and other
+      performance data used to improve the SDK and diagnose problems.</li>
+</ul>
+
+<p>The SDK receives your device's IP address, and Google's own disclosure for the
+Mobile Ads SDK says that address may be used to estimate the general location
+of a device &mdash; so Google may derive an <strong>approximate</strong> location from it, for
+advertising, analytics and fraud prevention. That estimate is never precise
+location: the app itself requests no location permission, has no access to GPS
+and never asks Android where you are. This is declared in the app's Play Data
+safety entry as approximate location, collected and shared. Google's
+disclosure is at
+<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">https://developers.google.com/admob/android/privacy/play-data-disclosure</a></p>
+
+<p>All of this data is encrypted in transit and governed by Google's privacy
+policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+
+<p>Scribble Sort does not have access to your ad data; Google manages it directly.
+You can view Google's privacy practices and data retention policies at the link
+above.</p>
+
+<h3>User Messaging Platform (UMP)</h3>
+
+<p>If you are in a region that requires consent for personalised ads (such as the
+EU), the app uses Google's User Messaging Platform to show a consent form. The
+SDK checks your consent status as part of starting up, so that form appears on
+first launch &mdash; before you have asked for anything &mdash; rather than the first time
+you reach an ad. Where UMP reports that a privacy-options control is required,
+the app adds <strong>Privacy options</strong> to its Settings, and you can change your
+choices there at any time.</p>
+
+<h2>Permissions</h2>
+
+<p>The released app requests the following Android permissions:</p>
+
+<ul>
+  <li><strong><code>INTERNET</code></strong> &mdash; Required by the Google Mobile Ads SDK, which uses it to
+      check your consent status when the app starts and to fetch and display ads.
+      Without this permission &mdash; or with the device simply offline &mdash; no ad can load,
+      and the two lifelines part company: the one extra tube a level allows is
+      granted free anyway, while an extra hint beyond the three free ones is not
+      offered at all, because those three were the whole promise. Nothing else
+      changes; all 100 levels are playable with no connection.</li>
+  <li><strong>All other permissions</strong> &mdash; none. No storage, no location, no camera, no
+      microphone, no contacts. In particular there is no <code>ACCESS_COARSE_LOCATION</code>
+      and no <code>ACCESS_FINE_LOCATION</code>: the app cannot read your position, and the
+      approximate location Google may estimate from your IP address (described
+      above) comes from the network connection, not from a location permission.
+      Vibration feedback uses Android's built-in view-level haptics, which do not
+      require the <code>VIBRATE</code> permission.</li>
+</ul>
+
+<p>For completeness, the merged release manifest does contain one
+<code>uses-permission</code> line, for
+<code>com.truevinesoftwaresolutions.scribblesort.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>.
+The app defines that permission itself, at <code>signature</code> protection
+level, and the AndroidX libraries add it automatically so that an internal
+broadcast cannot be picked up by another app. It names nothing outside Scribble
+Sort and grants no access to you or your device: it exists to keep other apps
+out, not to let this one in.</p>
+
+<h2>Android backup</h2>
+
+<p>Scribble Sort <strong>opts in to Android's backup deliberately</strong>, and
+says so in its manifest rather than leaving it to the platform default. The
+released app declares <code>android:allowBackup="true"</code>, together with
+<code>android:fullBackupContent="@xml/backup_rules"</code> (which Android 11 and
+below use) and
+<code>android:dataExtractionRules="@xml/data_extraction_rules"</code> (Android 12
+and above).</p>
+
+<p>Both of those rule files say the same short thing, and it is the whole of what
+they say: include <code>domain="sharedpref"</code> &mdash; the app's own shared
+preferences &mdash; and nothing else. The newer file answers separately the two
+cases Android 12 split apart, <strong>cloud backup</strong> and <strong>device
+transfer</strong>, and answers them identically.</p>
+
+<p>In plain terms: the small list of values in the table above &mdash; your
+stars, your finished pictures, the tutorial flag, the board you are part-way
+through and your two switches &mdash; is copied into <em>your</em> Google
+account's backup and restored onto your next phone, so the gallery wall you
+filled in comes with you. Nothing is held back from that copy, because there is
+nothing sensitive in it to hold back: the app stores no credentials, no
+identifiers and no personal details.</p>
+
+<p>That backup belongs to you and to Android, not to Scribble Sort. The app
+neither performs it nor has any way to read it back, and it goes to your own
+Google account, never to the developer. You control it in your device's Settings
+under System &rarr; Backup, where you can switch it off &mdash; for this app or
+altogether &mdash; and delete what has already been stored.</p>
+
+<h2>How to delete your data</h2>
+<ul>
+  <li><strong>In the game:</strong> open <strong>Settings</strong> (the slider
+      icon on the title screen), then tap <strong>Erase all progress</strong>,
+      then tap again to confirm. This deletes every saved star, every picture
+      unlock, the tutorial flag <strong>and the board you were part-way
+      through</strong> &mdash; the game is handed back to you as it was on a
+      fresh install, with nothing waiting to resume. A rating prompt you had
+      earned but not yet been shown goes with it. It deliberately leaves five
+      things alone: your sound switch, your vibration switch (so starting over
+      does not un-mute the game), the save-format version number, which
+      describes the shape of the save file rather than anything you did, and the
+      two rating counters, <code>review.requestCount</code> and
+      <code>review.lastRequestTime</code>. Those last two are not your progress:
+      they are the promise this app makes about how often it will ever interrupt
+      anyone &mdash; at most twice, 30 days apart &mdash; and an erase that
+      reopened that budget would turn the Erase button into a way to be asked
+      again.</li>
+  <li><strong>Everything, including the two switches and the two rating
+      counters:</strong> uninstall the app. Android deletes the app's private
+      storage with it.</li>
+  <li><strong>A copy held in an Android backup:</strong> erasing your progress
+      inside the game does not reach a copy that has already gone into your
+      Google account. Manage that through your device's Settings &rarr; System
+      &rarr; Backup, or in your Google account. Scribble Sort cannot reach it.</li>
+</ul>
+
+<h2>Children's privacy</h2>
+
+<p>Scribble Sort is suitable for all ages, including children under 13. <strong>The app
+is not directed at children under 13</strong>, and does not knowingly collect personal
+information from children under 13.</p>
+
+<p>The app does not collect names, emails, contact details or content you create.
+The only user data involved in the app's operation is:</p>
+
+<ol>
+  <li>Your game progress, saved locally on your device.</li>
+  <li>Your Android Advertising ID and related data, used only by the Google Mobile
+      Ads SDK when you choose to watch a rewarded ad &mdash; described in detail in the
+      Google Mobile Ads SDK section above.</li>
+</ol>
+
+<p>Because the app requests no contact information and no location permission,
+and uses no identifiers beyond those the Google Mobile Ads SDK uses &mdash; which
+include the IP address and the approximate location Google may estimate from
+it, as described above &mdash; it complies with COPPA (the Children's Online Privacy
+Protection Act) and with the GDPR's provisions on children's data.</p>
+
+<p><strong>Developer note:</strong> This paragraph reflects that the app is not directed at
+children under 13, and it matches the code: <code>kChildDirectedAds</code> in
+<code>lib/ads/ad_config.dart</code> is <code>false</code>, so ad requests are not tagged for
+child-directed treatment. If you select a target-audience age group that
+includes ages under 13 in Play Console, all three have to move together &mdash; set
+<code>kChildDirectedAds</code> to <code>true</code>, rewrite this paragraph to describe
+child-directed treatment, and make sure the app complies with Google Play's
+Families policy (no ads except families-certified ads, no collection of
+personal data from children, no use of identifiers like the Advertising ID).</p>
+
+<p>If you believe a child has somehow provided personal information through this
+app, please contact us at the address below.</p>
+
+<h2>Your rights</h2>
+
+<p>Data-protection laws such as the GDPR and the CCPA give you rights to access,
+correct, delete and port the personal data held about you. The only data we
+hold as the developer lives on your own device, under your direct control
+&mdash; plus, if you have Android backup switched on, the copy of it that
+Android keeps in your own Google account. You can access, export or erase all
+of it yourself, as described in &ldquo;How to delete your data&rdquo; above; we
+have no copy of it anywhere else to disclose, correct or delete on your
+behalf.</p>
+
+<p>Separately, the Google Mobile Ads SDK collects and shares your advertising ID
+and other device identifiers with Google, for advertising, analytics and fraud
+prevention, as described in the Google Mobile Ads SDK section above. You
+exercise your rights over that data through Google's own controls &mdash; the
+Google Ads settings and Google's privacy policy linked above &mdash; and
+through this app's Settings &rarr; Privacy options, where you can withdraw or
+change your consent at any time. Any data shared with Google for advertising is
+handled under Google's own privacy policy, not ours.</p>
+
+<p>We do not sell personal information, and the only sharing we do is the Google
+Mobile Ads SDK sending the data described above to Google when you choose to
+watch a rewarded ad.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If the app ever changes in a way that affects this policy, the policy will be
+updated and the &ldquo;Last updated&rdquo; date at the top of this page will
+change. The app does not send you push notifications about policy updates; the
+current version will always be at the URL where you are reading this.</p>
+
+<h2>Contact</h2>
+
+<div class="contact-box">
+  <p>For any question about this policy or about Scribble Sort, contact:</p>
+  <p class="email"><a href="mailto:truevinesoftwaresolutions@gmail.com">truevinesoftwaresolutions@gmail.com</a></p>
+</div>
+
+<h2>About this page</h2>
+
+<p>This policy is published as a single static file. The page sets no cookies,
+loads no external resources &mdash; no fonts, no stylesheets, no images, no
+analytics &mdash; and runs no scripts.</p>
+
+<footer>
+  <p>Scribble Sort &mdash; <code>com.truevinesoftwaresolutions.scribblesort</code> &mdash; version 1.1.0.</p>
+</footer>
+
+</main>
+</body>
+</html>
